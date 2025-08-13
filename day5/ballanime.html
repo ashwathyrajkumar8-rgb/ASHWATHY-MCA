@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ballanime</title>
+<style>
+/* img:hover{
+        rotate: 360deg;
+        cursor:pointer;
+        transition-duration: 5s;
+} */
+ img{
+    animation:ball 5s infinite;
+ }
+ @keyframes ball{
+    0%{
+        transform:translateY(-500px)rotate(360deg);
+    }
+    50%{
+        transform: translateY(500px)rotate(220deg);
+    }
+    75%{
+        transform: translateY(500px)rotate(320deg);
+    }
+      100%{
+        transform: translateY(500px)rotate(360deg);
+    }
+ }
+</style>
+<body>
+
+<div class="ball">
+    <img src="ball.jpg",alt="loading">
+</div>
+
+
+</head>
+    
+</body>
+</html>
