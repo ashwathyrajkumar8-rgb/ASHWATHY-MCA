@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web</title>
+      <style>
+        
+        *{
+            margin:0%;
+            padding: 0%;
+        }
+
+        body{
+            background-color: #f0f0f0;
+        }
+
+
+/* 
+        .header ul{
+            display: none;
+        } */
+
+    header {
+      background: linear-gradient(to right, #f16d76);
+      color: rgb(129, 14, 17);
+      padding: 40px;
+      text-align: center;
+      font-size: 80px;
+      
+    
+      
+    }
+
+    .nav1,.nav3{
+        width:40%;
+    }
+
+    .nav1 ul{
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+
+        }
+        .nav2 ul{
+            display: flex;
+            list-style: none;
+        }
+      
+        .anime {
+             color: rgb(2, 10, 14); 
+             font-weight: bold;
+        }
+
+        .world {
+             color: rgb(5, 3, 5); 
+            font-weight: bold;
+        } 
+        .nav3 ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-evenly;
+            
+
+            
+        }
+       .fullnav{
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+
+       
+       }
+
+    /* footer {
+      background: linear-gradient(to right, #b9bec4);
+      color: rgb(94, 22, 22);
+      padding: 15px;
+      text-align: center;
+      font-size: 100px;
+      position: relative;
+      bottom: 0;
+     
+    } */
+
+
+
+        #container{
+            transition-duration: 1s;
+            background-image:url('web anime.png');
+            height: 100vh;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .mini{
+            position: absolute;
+            bottom: 0;
+
+
+        }
+
+
+        .mini img{
+            
+                height: 10%;
+                width: 10%;
+                padding-top: 500px;
+                opacity: 0.6;
+        
+            
+
+        }
+
+        .mini .active{
+                    opacity: 1;
+        }
+
+
+
+        .mini img:hover {
+      transform: scale(1.1);
+    }
+
+        
+
+        .arrow img{
+            height: 200px;
+        }
+        
+        #arrow1{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: rotate(-180deg);
+        
+        }
+
+        #arrow2{
+            position: absolute;
+            top: 50%;
+            right:0;
+        }
+        
+
+        .card{
+           height: 300px;
+           width: 200px; 
+
+        }
+
+        .card img{
+            height: 300%;
+            width: 300%;
+            
+        
+            
+           
+        }
+       
+
+        .container1{
+                 display: flex;
+                 justify-content: center;
+                 gap:600px;   
+                 flex-wrap:wrap;
+                 padding: 100px;
+            
+            }
+
+        /* .con{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        } */
+/* 
+
+         @media screen and (min-width:768px){
+
+           
+            .header ul{
+            background-color: blanchedalmond;
+            display: flex;
+            justify-content: space-around;
+            text-decoration: none;
+            list-style-type: none;
+            padding: 20px;
+            font-size: x-large;
+        }
+
+        .icon{
+            display: none;
+        }
+        
+        } */
+        </style>
+
+</head>
+<body>
+
+    <header class="header">
+         <!-- <div class="icon">
+
+            <i class="fa-solid fa-bars"></i>
+        </div> -->
+        <div class="fullnav">
+
+            <nav class="nav1">
+                <ul>
+                    <li>HOME</li>
+                    <li>SERIES</li>
+                    <li>MOVIES</li>
+                    <li>SPORTS</li>
+                </ul>
+            </nav>
+            <nav class="nav2">
+                <ul>
+                    <li>
+                        <span class="anime">ANIME</span><br><span class="anime">SPHERE</span>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="nav3">
+                <ul>
+                <input type="search"placeholder="SEARCH...">           
+                    <li>DOWNLOADS</li>
+                    <li>MY SPACE</li></ul>
+                </nav>
+        </div>
+        
+    </header>
+
+    <div id="container">
+
+    <div class="arrow">
+        <img onclick="prev()"id="arrow1" src="https://th.bing.com/th/id/R.0673093bbfcecc10fc43a2e61243415c?rik=1pH9V0jCRyiRdQ&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2farrow-image-transparent%2farrow-image-transparent-9.png&ehk=tGpJQDxnJ%2bq7S2HVaT2wMHWwaLHTtpQ%2b%2baxiZvotuvY%3d&risl=&pid=ImgRaw&r=0">
+        <img onclick="next()"id="arrow2" src="https://th.bing.com/th/id/R.0673093bbfcecc10fc43a2e61243415c?rik=1pH9V0jCRyiRdQ&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2farrow-image-transparent%2farrow-image-transparent-9.png&ehk=tGpJQDxnJ%2bq7S2HVaT2wMHWwaLHTtpQ%2b%2baxiZvotuvY%3d&risl=&pid=ImgRaw&r=0">
+
+    </div>
+
+    <div class="mini">
+        <img class="img active"onclick="change(0)" src="web anime.png"alt="loading">
+        <img class="img" src="img1.jpg"alt="loading">
+        <img class="img" src="img2.jpg"alt="loading">
+        <img class="img" src="img3.jpg"alt="loading">
+        <img class="img" src="img4.jpg"alt="loading">
+        <img class="img" src="img5.jpg"alt="loading">
+
+
+    </div>
+    </div>
+    <main>
+        <!-- <div class="con">
+            <p><strong><h1>LATEST SERIES</h1></strong></p><br>
+            <br>
+            <br>
+            <br> -->
+            <div class="container1">
+        <div class="card">
+            <img src="card1.jpg",alt="loading"></div>
+
+        <div class="card">
+        <img src="card2.jpg",alt="loading"></div>
+
+         <div class="card">
+        <img src="card3.jpg",alt="loading"></div>
+
+         <div class="card">
+        <img src="card4.jpg",alt="loading"></div>
+
+         <div class="card">
+        <img src="card5.jpg",alt="loading"></div>
+
+         <div class="card">
+        <img src="card6.jpg",alt="loading"></div>
+
+         <div class="card">
+        <img src="card7.jpg",alt="loading"></div>
+    </div>
+        <!-- </div> -->
+    </main>
+
+    <!-- <footer>
+        2025 Anime web slider.
+        <br>
+        all rights reserved.
+    </footer> -->
+    <script src="web.js">
+
+    </script>
+
+</body>
+</html>

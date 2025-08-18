@@ -26,12 +26,13 @@ let prev=()=>{
      
 let i=0;
 let next=()=>{
-
+    // img[i].classlist.remove('active');
      i++;
     if(i==6)
     {
         i=0;
     }
+    // img[i].classlist.add('active');
 
     con.style.backgroundImage=`url('${arr[i]}')`;
 }
