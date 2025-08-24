@@ -7,8 +7,6 @@ const arr=["web anime.png",
     "img5.jpg",
 ]
 
-
-
 let prev=()=>{
      i--;
     if(i==-1)
@@ -28,7 +26,6 @@ let next=()=>{
     {
         i=0;
     }
-
 
     con.style.backgroundImage=`url('${arr[i]}')`;
 }
