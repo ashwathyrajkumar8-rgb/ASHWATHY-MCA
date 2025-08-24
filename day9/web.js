@@ -19,20 +19,16 @@ let prev=()=>{
     con.style.backgroundImage=`url('${arr[i]}')`;
 
 }
-// let change=(a)=>{
 
-//  con.style.backgroundImage=`url('${arr[a]}')`;
-// }
-     
 let i=0;
 let next=()=>{
-    // img[i].classlist.remove('active');
+   
      i++;
     if(i==6)
     {
         i=0;
     }
-    // img[i].classlist.add('active');
+
 
     con.style.backgroundImage=`url('${arr[i]}')`;
 }
