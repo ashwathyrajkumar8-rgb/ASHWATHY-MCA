@@ -9,6 +9,10 @@
         *{
             margin:0%;
             padding: 0%;
+                  box-sizing: border-box;
+      font-family: sans-serif;
+
+
         }
 
         body{
@@ -16,10 +20,7 @@
         }
 
 
-/* 
-        .header ul{
-            display: none;
-        } */
+
 
     header {
       background: linear-gradient(to right, #f16d76);
@@ -146,66 +147,103 @@
         
 
         .card{
-           height: 300px;
-           width: 200px; 
+           height: 800px;
+           width: 500px; 
+           border-radius: 12px;
+           overflow:hidden;
+           box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            transition: tranform 0.3s ease;
+            background-color: #fff;
 
         }
 
         .card img{
-            height: 300%;
-            width: 300%;
-            
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            justify-content: center;
+            flex-wrap: wrap;
         
             
            
         }
+
+        .card:hover {
+    transform: scale(1.05);
+}
        
 
         .container1{
                  display: flex;
                  justify-content: center;
-                 gap:600px;   
+                 gap:40px;   
                  flex-wrap:wrap;
-                 padding: 100px;
+                 padding: 40px 20px;
+                 background-color: #fff;
             
             }
+.footer {
+  background: linear-gradient(to right, #f16d76, #f89d9d);
+  color: white;
+  padding: 40px 20px 20px;
+  font-size: 16px;
+}
 
-        /* .con{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        } */
-/* 
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
 
-         @media screen and (min-width:768px){
+.footer-section {
+  flex: 1 1 250px;
+}
 
-           
-            .header ul{
-            background-color: blanchedalmond;
-            display: flex;
-            justify-content: space-around;
-            text-decoration: none;
-            list-style-type: none;
-            padding: 20px;
-            font-size: x-large;
-        }
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 15px;
+}
 
-        .icon{
-            display: none;
-        }
+.footer-section p {
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 20px;
+}
         
-        } */
         </style>
 
 </head>
 <body>
 
     <header class="header">
-         <!-- <div class="icon">
-
-            <i class="fa-solid fa-bars"></i>
-        </div> -->
+       
         <div class="fullnav">
 
             <nav class="nav1">
@@ -253,41 +291,67 @@
     </div>
     </div>
     <main>
-        <!-- <div class="con">
-            <p><strong><h1>LATEST SERIES</h1></strong></p><br>
-            <br>
-            <br>
-            <br> -->
+        
+              <h2 style="text-align:center; margin-top:40px; font-size:2rem;">Latest Series</h2>
             <div class="container1">
         <div class="card">
-            <img src="card1.jpg",alt="loading"></div>
+            <img src="card1.jpg",alt="ANIME 1"></div>
 
         <div class="card">
-        <img src="card2.jpg",alt="loading"></div>
+        <img src="card2.jpg",alt="ANIME 2"></div>
 
          <div class="card">
-        <img src="card3.jpg",alt="loading"></div>
+        <img src="card3.jpg",alt="ANIME 3"></div>
 
          <div class="card">
-        <img src="card4.jpg",alt="loading"></div>
+        <img src="card4.jpg",alt="ANIME 4"></div>
 
          <div class="card">
-        <img src="card5.jpg",alt="loading"></div>
+        <img src="card5.jpg",alt="ANIME 5"></div>
 
          <div class="card">
-        <img src="card6.jpg",alt="loading"></div>
+        <img src="card6.jpg",alt="ANIME 6"></div>
 
          <div class="card">
-        <img src="card7.jpg",alt="loading"></div>
+        <img src="card7.jpg",alt="ANIME 7"></div>
     </div>
-        <!-- </div> -->
+     
     </main>
 
-    <!-- <footer>
-        2025 Anime web slider.
-        <br>
-        all rights reserved.
-    </footer> -->
+  <footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-section about">
+      <h3>Anime Sphere</h3>
+      <p>Your one-stop hub for anime series, movies, and more. Dive into the world of your favorite characters.</p>
+    </div>
+
+    <div class="footer-section links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Series</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">Downloads</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section social">
+      <h4>Follow Us</h4>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">YouTube</a></li>
+        <li><a href="#">Discord</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 Anime Sphere. All rights reserved.
+  </div>
+</footer>
     <script src="web.js">
 
     </script>
